@@ -3,70 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Developer Portfolio</title>
+    <title>Web Developer Portfolio | Sudip Mandal</title>
+    <!-- 🟦 Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- 🟦 External CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- 🟦 SEO Meta Tags -->
+    <meta name="description" content="Sudip Mandal's creative web developer portfolio. Projects, skills, and contact info.">
+    <meta property="og:title" content="Sudip Mandal Portfolio">
+    <meta property="og:description" content="Creative web developer portfolio with projects, skills, and contact info.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/og-image.png">
+    <!-- 🟦 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- 🟦 NAVIGATION START -->
+    <nav id="navbar" class="navbar" aria-label="Main Navigation">
+      <div class="navbar__container">
+        <a href="#hero" class="navbar__brand" aria-label="Home">Sudip Mandal</a>
+        <ul class="navbar__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- 🟦 NAVIGATION END -->
 
-    <header>
-        <h1>Sudip Mandal</h1>
-        <p>Web Developer</p>
-        <nav>
-            <a href="#about">About</a> |
-            <a href="#projects">Projects</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <main>
+      <!-- 🟦 HERO SECTION START -->
+      <section id="hero" class="hero" tabindex="-1" aria-label="Hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Sudip Mandal</h1>
+          <p class="hero__tagline">Creative Web Developer & Problem Solver</p>
+          <div class="hero__cta">
+            <a href="#contact" class="btn btn--primary" aria-label="Hire Me">Hire Me</a>
+            <a href="assets/SudipMandal-Resume.pdf" class="btn btn--secondary" download aria-label="Download Resume">Download Resume</a>
+          </div>
+        </div>
+        <!-- 🟪 Placeholder for animated shapes/effects -->
+        <div class="hero__shapes" aria-hidden="true"></div>
+      </section>
+      <!-- 🟦 HERO SECTION END -->
 
-    <hr>
+      <!-- 🟦 ABOUT SECTION START -->
+      <section id="about" class="about" tabindex="-1" aria-label="About Me">
+        <div class="about__container">
+          <h2 class="about__title">About Me</h2>
+          <p class="about__bio">
+            I am a passionate web developer with experience in creating responsive and dynamic websites using modern web technologies. I enjoy solving problems and building user-friendly applications.
+          </p>
+        </div>
+      </section>
+      <!-- 🟦 ABOUT SECTION END -->
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate web developer with experience in creating responsive and dynamic websites using modern web technologies. I enjoy solving problems and building user-friendly applications.</p>
-    </section>
+      <!-- 🟦 SKILLS SECTION START -->
+      <section id="skills" class="skills" tabindex="-1" aria-label="Skills">
+        <div class="skills__container">
+          <h2 class="skills__title">Skills & Tech Stack</h2>
+          <ul class="skills__list" role="list">
+            <li class="skills__item"><span class="skills__icon" aria-hidden="true">🌐</span> HTML5</li>
+            <li class="skills__item"><span class="skills__icon" aria-hidden="true">🎨</span> CSS3</li>
+            <li class="skills__item"><span class="skills__icon" aria-hidden="true">🟨</span> JavaScript</li>
+            <li class="skills__item"><span class="skills__icon" aria-hidden="true">🐍</span> Python</li>
+            <li class="skills__item"><span class="skills__icon" aria-hidden="true">💻</span> C</li>
+            <li class="skills__item"><span class="skills__icon" aria-hidden="true">💻</span> C++</li>
+            <li class="skills__item"><span class="skills__icon" aria-hidden="true">📱</span> Responsive Design</li>
+            <li class="skills__item"><span class="skills__icon" aria-hidden="true">🔗</span> Git & GitHub</li>
+          </ul>
+        </div>
+      </section>
+      <!-- 🟦 SKILLS SECTION END -->
 
-    <hr>
+      <!-- 🟦 PROJECTS SECTION START -->
+      <section id="projects" class="projects" tabindex="-1" aria-label="Projects">
+        <div class="projects__container">
+          <div class="projects__scroll-bg"></div>
+          <h2 class="projects__title">Projects</h2>
+          <div class="projects__scroll">
+            <article class="project-card">
+              <div class="project-card__img-placeholder">IMG</div>
+              <h3 class="project-card__title">Amazon Homepage Clone</h3>
+              <p class="project-card__desc">A visual replica of Amazon's homepage created to practice HTML and CSS layout techniques.</p>
+              <ul class="project-card__tech"><li>HTML</li><li>CSS</li></ul>
+              <div class="project-card__links">
+                <a href="https://github.com/sudip-mandal/amazon-ui-replica" target="_blank" rel="noopener" class="btn btn--secondary">GitHub</a>
+                <a href="#" target="_blank" rel="noopener" class="btn btn--primary">Live Demo</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-card__img-placeholder">IMG</div>
+              <h3 class="project-card__title">To-Do List App</h3>
+              <p class="project-card__desc">A basic interactive to-do list web app where users can add, delete, or mark tasks as completed using checkboxes.</p>
+              <ul class="project-card__tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="project-card__links">
+                <a href="https://github.com/sudip-mandal/Basic-Projects/tree/main/FrontenedProjects/ToDo%20List" target="_blank" rel="noopener" class="btn btn--secondary">GitHub</a>
+                <a href="#" target="_blank" rel="noopener" class="btn btn--primary">Live Demo</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-card__img-placeholder">IMG</div>
+              <h3 class="project-card__title">Joke Generator with History</h3>
+              <p class="project-card__desc">Fetches random jokes from an external API with a dynamic UI. Maintains a local history of previously generated jokes.</p>
+              <ul class="project-card__tech"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Joke API</li></ul>
+              <div class="project-card__links">
+                <a href="https://github.com/sudip-mandal/Basic-Projects/tree/main/FrontenedProjects/Joke_Generator" target="_blank" rel="noopener" class="btn btn--secondary">GitHub</a>
+                <a href="#" target="_blank" rel="noopener" class="btn btn--primary">Live Demo</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-card__img-placeholder">IMG</div>
+              <h3 class="project-card__title">Rock-Paper-Scissors Game</h3>
+              <p class="project-card__desc">An interactive game where the user plays against the computer, which selects moves randomly. Tracks and displays scores for both players and visually indicates wins, losses, or draws.</p>
+              <ul class="project-card__tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="project-card__links">
+                <a href="https://github.com/sudip-mandal/Basic-Projects/tree/main/FrontenedProjects/Rock_Paper_Scissor" target="_blank" rel="noopener" class="btn btn--secondary">GitHub</a>
+                <a href="#" target="_blank" rel="noopener" class="btn btn--primary">Live Demo</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-card__img-placeholder">IMG</div>
+              <h3 class="project-card__title">Career.ai (In Progress – Team Project)</h3>
+              <p class="project-card__desc">AI-powered web application that generates a personalized career roadmap for users based on chosen skills. Features adaptive timetables, real-time goal tracking, and skill-based opportunity integration.</p>
+              <ul class="project-card__tech"><li>Technologies: (TBD)</li></ul>
+              <div class="project-card__links">
+                <a href="#" target="_blank" rel="noopener" class="btn btn--secondary">GitHub</a>
+                <a href="#" target="_blank" rel="noopener" class="btn btn--primary">Live Demo</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- 🟦 PROJECTS SECTION END -->
+      <script src="scripts/carousel.js"></script>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong><a href="http://127.0.0.1:5500/index.html">Portfolio Website:</a> </strong> A personal website to showcase my projects and skills.
+      <!-- 🟦 EXPERIENCE SECTION START -->
+      <section id="experience" class="experience" tabindex="-1" aria-label="Experience & Certifications">
+        <div class="experience__container">
+          <h2 class="experience__title">Experience & Certifications</h2>
+          <ul class="experience__list" role="list">
+
+            <li class="experience__item">
+              <p class="experience__org">🎓 I am currently a fresher with no formal industry experience, but I’m highly motivated, actively learning, and open to exciting opportunities in web development. I'm passionate about building clean, interactive, and accessible web solutions.</p>
             </li>
-        </ul>
-    </section>
+            <!-- <li class="experience__item">
+              <span class="experience__role">Certified JavaScript Developer</span> – <span class="experience__org">Code Institute</span> <span class="experience__date">(2022)</span>
+            </li>
+            <li class="experience__item">
+              <span class="experience__role">Responsive Web Design Certification</span> – <span class="experience__org">freeCodeCamp</span> <span class="experience__date">(2021)</span>
+            </li>
+          </ul> -->
+          
+        </div>
+      </section>
+      <!-- 🟦 EXPERIENCE SECTION END -->
 
-    <hr>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>Python</li>
-            <li>C</li>
-            <li>C++</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Responsive Design</li>
-            <li>Git & GitHub</li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: sudipmandal1706@gmail.com</p>
-        <p>Phone: +91 933*****08</p>
-        <p>GitHub: <a href="https://github.com/Sudip-Mandal" target="_main">github.com/Sudip Mandal</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/Sudip Mandal" target="_main">linkedin.com/in/SudipMandal</a></p>
-        <p>LeetCode:<a href="https://leetcode.com/u/SM1706/" target="_main">LeetCode.com/in/SudipMandal</a></p>
-    </section>
+      <!-- 🟦 CONTACT SECTION START -->
+      <section id="contact" class="contact" tabindex="-1" aria-label="Contact">
+        <div class="contact__container">
+          <h2 class="contact__title">Contact</h2>
+          <ul class="contact__list" role="list">
+            <li class="contact__item"><span class="contact__label">Email:</span> <a href="mailto:sudipmandal1706@gmail.com" class="contact__link">sudipmandal1706@gmail.com</a></li>
+            <li class="contact__item"><span class="contact__label">Phone:</span> <a href="tel:+91933*****08" class="contact__link">+91 933*****08</a></li>
+            <li class="contact__item"><span class="contact__label">GitHub:</span> <a href="https://github.com/Sudip-Mandal" target="_blank" rel="noopener" class="contact__link">github.com/Sudip-Mandal</a></li>
+            <li class="contact__item"><span class="contact__label">LinkedIn:</span> <a href="https://linkedin.com/in/SudipMandal" target="_blank" rel="noopener" class="contact__link">linkedin.com/in/SudipMandal</a></li>
+            <li class="contact__item"><span class="contact__label">LeetCode:</span> <a href="https://leetcode.com/u/SM1706/" target="_blank" rel="noopener" class="contact__link">leetcode.com/u/SM1706</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- 🟦 CONTACT SECTION END -->
+    </main>
 
     <footer>
-        <hr>
-        <p>&copy; 2025 Sudip Mandal . All rights reserved.</p>
+      <hr>
+      <p>&copy; 2025 Sudip Mandal. All rights reserved.</p>
     </footer>
-
+    <!-- 🟦 External JS -->
+    <script src="scripts/script.js"></script>
+    <!-- 🟪 GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </body>
 </html>
