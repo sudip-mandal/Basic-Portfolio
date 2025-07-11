@@ -21,10 +21,7 @@ A fully responsive, creative, dark-themed single-page portfolio website built wi
 2. Open `index.html` in your browser
 3. Add your own images to `assets/` as needed
 
-## 📦 Dependencies
-- [AOS.js](https://michalsnik.github.io/aos/) (for scroll animations, optional)
 
----
 
 > Built following best practices for structure, accessibility, and performance.
 
