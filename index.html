@@ -36,12 +36,17 @@
     <main>
       <!-- 🟦 HERO SECTION START -->
       <section id="hero" class="hero" tabindex="-1" aria-label="Hero">
-        <div class="hero__content">
-          <h1 class="hero__title">Sudip Mandal</h1>
-          <p class="hero__tagline">Creative Web Developer & Problem Solver</p>
-          <div class="hero__cta">
-            <a href="#contact" class="btn btn--primary" aria-label="Hire Me">Hire Me</a>
-            <a href="assets/SudipMandal-Resume.pdf" class="btn btn--secondary" download aria-label="Download Resume">Download Resume</a>
+        <div class="hero__content hero__content--with-photo">
+          <div class="hero__profile-pic-wrapper">
+            <img src="images/person-smiling.jpg" alt="Profile photo: Person smiling, friendly and approachable" class="hero__profile-pic" loading="lazy">
+          </div>
+          <div class="hero__text-block">
+            <h1 class="hero__title">Sudip Mandal</h1>
+            <p class="hero__tagline">Creative Web Developer & Problem Solver</p>
+            <div class="hero__cta">
+              <a href="#contact" class="btn btn--primary" aria-label="Hire Me">Hire Me</a>
+              <a href="assets/SudipMandal-Resume.pdf" class="btn btn--secondary" download aria-label="Download Resume">Download Resume</a>
+            </div>
           </div>
         </div>
         <!-- 🟪 Placeholder for animated shapes/effects -->
@@ -50,7 +55,7 @@
       <!-- 🟦 HERO SECTION END -->
 
       <!-- 🟦 ABOUT SECTION START -->
-      <section id="about" class="about" tabindex="-1" aria-label="About Me">
+      <section id="about" class="about about--with-bg" tabindex="-1" aria-label="About Me">
         <div class="about__container">
           <h2 class="about__title">About Me</h2>
           <p class="about__bio">
@@ -59,6 +64,25 @@
         </div>
       </section>
       <!-- 🟦 ABOUT SECTION END -->
+
+      <!-- 🟦 PHOTO GALLERY SECTION START -->
+      <section id="photo-gallery" class="photo-gallery" tabindex="-1" aria-label="Photo Gallery">
+        <div class="photo-gallery__container">
+          <h2 class="photo-gallery__title">Photo Gallery</h2>
+          <div class="photo-gallery__multi">
+            <div class="photo-gallery__item animate-rotate">
+              <img src="images/person-outdoors.jpg" alt="Person outdoors, enjoying nature and fresh air" class="photo-gallery__img" loading="lazy">
+            </div>
+            <div class="photo-gallery__item animate-zoom">
+              <img src="images/person-smiling.jpg" alt="Person smiling, friendly and approachable" class="photo-gallery__img" loading="lazy">
+            </div>
+            <div class="photo-gallery__item animate-left">
+              <img src="images/person-working.jpg" alt="Person working at a desk, focused and productive" class="photo-gallery__img" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 🟦 PHOTO GALLERY SECTION END -->
 
       <!-- 🟦 SKILLS SECTION START -->
       <section id="skills" class="skills" tabindex="-1" aria-label="Skills">

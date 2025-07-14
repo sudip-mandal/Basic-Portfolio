@@ -30,4 +30,23 @@ window.addEventListener('DOMContentLoaded', () => {
     animateSection('.contact__container');
     // Removed .projects__grid animation to avoid ScrollTrigger error
   }
-}); 
+});
+
+// 🟨 IntersectionObserver for Multi-Image Photo Gallery Animations
+(function() {
+  const galleryItems = document.querySelectorAll('.photo-gallery__multi .photo-gallery__item');
+  if (!galleryItems.length) return;
+
+  const observer = new window.IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+
+  galleryItems.forEach(item => observer.observe(item));
+})(); 
